@@ -116,4 +116,9 @@ public class ArtPanel extends JPanel
 	{
 		
 	}
+	
+	private void setupListeners()
+	{
+		
+	}
 }
