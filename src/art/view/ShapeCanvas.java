@@ -50,14 +50,13 @@ public class ShapeCanvas extends JPanel
 	{
 		if (current instanceof Polygon)
 		{
-			if (((Polygon)current).xpoints.length == 3);
+			if (((Polygon)current).xpoints.length == 3)
 			{
 				triangleList.add((Polygon) current);
 			}
 			else
 			{
-				polygonList.add((Polygon)current);
-
+				polygonList.add((Polygon) current);
 			}
 		}
 		else if(current instanceof Ellipse2D)
