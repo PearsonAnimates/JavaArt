@@ -2,9 +2,12 @@ package art.view;
 
 import javax.swing.JFrame;
 import art.controller.ArtController;
+import art.view.ArtPanel;
+import art.view.ShapeCanvas;
 
 public class ArtFrame extends JFrame
 {
+	private ArtController app;
 	private ArtPanel appPanel;
 	
 	public ArtFrame(ArtController app)
