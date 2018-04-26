@@ -2,6 +2,7 @@ package art.controller;
 
 import art.view.ArtFrame;
 import art.view.ArtPanel;
+import art.view.ShapeCanvas;
 
 import javax.swing.JOptionPane;
 
@@ -13,16 +14,21 @@ public class ArtController
 	public ArtController()
 	{
 		super();
+		this.appFrame = appFrame;
 	}
 	
 	public void start()
 	{
-		appFrame = new ArtFrame(this);
 		JOptionPane.showMessageDialog(appFrame, "Welcome to art!");
 	}
 	
 	public void handleErrors(Exception error)
 	{
 		JOptionPane.showMessageDialog(appFrame, error.getMessage());
+	}
+	
+	public ArtFrame getFrame()
+	{
+		return appFrame;
 	}
 }
